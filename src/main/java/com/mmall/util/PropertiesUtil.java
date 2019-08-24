@@ -17,6 +17,7 @@ public class PropertiesUtil {
 
     private static Properties props;
 
+    // 静态块，class被加载的时候先执行且只会执行一次，初始化作为静态变量
     static {
         String fileName = "mmall.properties";
         props = new Properties();
@@ -43,7 +44,4 @@ public class PropertiesUtil {
         }
         return value.trim();
     }
-
-
-
 }
